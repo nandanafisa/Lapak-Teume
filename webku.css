@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    height: 70px;
+    background-color: #424949;
+}
+
+header h1 {
+    display: inline-block;
+    float: left;
+    padding: 15px 24px;
+}
+
+header h1 a {
+    color: #AED6F1;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    padding: 24px;
+    display: inline-block;
+}
+
+header ul li a {
+    color: #FFFDF7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin:0 auto;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.banner {
+    display: flex;
+    background: url("images/ab.jpg") no-repeat center;
+    height: 100vh;
+    color: black;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.banner h1,
+.banner h2 {
+    color: white;
+}
+
+section h3 {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+
+section h3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color: #ddd;
+    left: calc(50% - 60px);
+}
+
+section h3::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    width: 40px;
+    height: 4px;
+    background-color: #424949;
+    left: calc(50% - 20px);
+}
+
+#about p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.col-3 {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 50px;
+    float: left;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.col-3 a:hover img {
+    transform: scale(1.2);
+}
+
+.contact .right form .fields {
+    flex-direction: column;
+}
+
+.contact .right form .name,
+.contact .right form .email {
+    margin: 0;
+}
+
+.right form .error-box {
+    width: 150px;
+}
